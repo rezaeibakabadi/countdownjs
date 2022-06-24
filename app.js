@@ -26,7 +26,16 @@ const giveaway = document.querySelector('.giveaway');
 const deadLine = document.querySelector('.deadline');
 const items = document.querySelectorAll('.deadline-format h4');
 
-let feuture = new Date(2022 , 06 , 30 , 18 , 00 ,00);
+let tempDate = new Date();
+let tempYear = tempDate.getFullYear();
+let tempMonth = tempDate.getMonth();
+let tempDay = tempDate.getDate();
+
+
+
+
+// let feuture = new Date(2022 , 06 , 30 , 18 , 00 ,00);
+const feuture = new Date(tempYear,tempMonth,tempDay + 10 ,11 , 30, 0)
 
 const year = feuture.getFullYear();
 const hours = feuture.getHours();
